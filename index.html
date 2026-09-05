@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAiRRIVAL — PROVE IT.</title>
+  <style>
+    body{
+      margin:0;
+      font-family:Arial,sans-serif;
+      background:#05070b;
+      color:white;
+    }
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:22px 40px;
+      border-bottom:1px solid #1b2230;
+    }
+    .logo{
+      font-size:28px;
+      font-weight:900;
+      font-style:italic;
+    }
+    .logo span{
+      color:#7b2cff;
+    }
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 14px;
+      font-size:14px;
+    }
+    .btn{
+      background:linear-gradient(90deg,#6a00ff,#a100ff);
+      color:white;
+      border:0;
+      border-radius:10px;
+      padding:14px 22px;
+      font-weight:700;
+      cursor:pointer;
+    }
+    .hero{
+      min-height:70vh;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:40px;
+      padding:70px 6%;
+      background:
+        radial-gradient(circle at 20% 30%,rgba(0,140,255,.25),transparent 35%),
+        radial-gradient(circle at 80% 30%,rgba(140,0,255,.28),transparent 35%),
+        #05070b;
+    }
+    .hero-left{
+      max-width:650px;
+    }
+    .eyebrow{
+      color:#9f5cff;
+      letter-spacing:4px;
+      font-weight:700;
+    }
+    h1{
+      font-size:90px;
+      margin:10px 0;
+      line-height:.9;
+    }
+    h1 span{
+      color:#8f2cff;
+    }
+    .lead{
+      font-size:22px;
+      color:#d7d7df;
+      line-height:1.5;
+    }
+    .rival-box{
+      min-width:360px;
+      padding:35px;
+      border:1px solid #263040;
+      border-radius:18px;
+      background:rgba(9,14,22,.9);
+      box-shadow:0 0 50px rgba(120,0,255,.2);
+      text-align:center;
+    }
+    .vs{
+      font-size:55px;
+      font-weight:900;
+      color:#8f2cff;
+    }
+    .section{
+      padding:60px 6%;
+    }
+    .section h2{
+      font-size:38px;
+      margin-bottom:25px;
+    }
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+      gap:16px;
+    }
+    .card{
+      padding:25px;
+      border-radius:14px;
+      background:#0d121a;
+      border:1px solid #202938;
+    }
+    .card strong{
+      display:block;
+      font-size:20px;
+      margin-top:10px;
+    }
+    footer{
+      padding:45px 6%;
+      border-top:1px solid #1b2230;
+      text-align:center;
+      color:#9aa3b4;
+    }
+    @media(max-width:800px){
+      nav{display:none}
+      .hero{flex-direction:column}
+      h1{font-size:60px}
+      .rival-box{min-width:auto;width:100%;box-sizing:border-box}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">FAiR<span>RIVAL</span></div>
+  <nav>
+    <a href="#games">Jeux</a>
+    <a href="#ranking">Classements</a>
+    <a href="#tournaments">Tournois</a>
+    <a href="#clubs">Clubs</a>
+    <a href="#creators">Créateurs</a>
+  </nav>
+  <button class="btn">S'inscrire</button>
+</header>
+
+<section class="hero">
+  <div class="hero-left">
+    <div class="eyebrow">PLUS QU'UN JEU. UNE RIVALITÉ.</div>
+    <h1>PROVE <span>IT.</span></h1>
+    <p class="lead">
+      Affronte des joueurs du monde entier.
+      Grimpe dans les classements.
+      Rejoins un club.
+      Participe aux plus grands tournois.
+    </p>
+    <button class="btn">Jouer maintenant</button>
+  </div>
+
+  <div class="rival-box">
+    <div>FRANCE 🇫🇷</div>
+    <h2>ALPHA</h2>
+    <div class="vs">VS</div>
+    <h2>RIVALX</h2>
+    <div>ESPAGNE 🇪🇸</div>
+    <p>GOOD PLAYERS CREATE RIVALS</p>
+  </div>
+</section>
+
+<section class="section" id="games">
+  <h2>Nos jeux</h2>
+  <div class="cards">
+    <div class="card">♟️<strong>Échecs</strong></div>
+    <div class="card">⚫<strong>Dames</strong></div>
+    <div class="card">🔴<strong>Puissance 4</strong></div>
+    <div class="card">🃏<strong>Cartes</strong></div>
+    <div class="card">❎<strong>Tic Tac Toe</strong></div>
+    <div class="card">🎲<strong>Backgammon</strong></div>
+  </div>
+</section>
+
+<section class="section" id="ranking">
+  <h2>Classement mondial</h2>
+  <div class="cards">
+    <div class="card">🥇 MagnusFake — 2412</div>
+    <div class="card">🥈 CheckMate — 2396</div>
+    <div class="card">🥉 RivalKing — 2381</div>
+  </div>
+</section>
+
+<section class="section" id="tournaments">
+  <h2>Tournois</h2>
+  <div class="cards">
+    <div class="card">🏆 Weekly Open</div>
+    <div class="card">🇫🇷 France vs Espagne 🇪🇸</div>
+    <div class="card">🎓 Student Cup</div>
+  </div>
+</section>
+
+<section class="section" id="clubs">
+  <h2>Clubs</h2>
+  <p>Crée ton club. Défie le monde.</p>
+</section>
+
+<section class="section" id="creators">
+  <h2>FAiRRIVAL Creators</h2>
+  <p>Codes créateurs, profils vérifiés, défis et événements exclusifs.</p>
+  <button class="btn">Rejoindre les créateurs</button>
+</section>
+
+<footer>
+  FAiRRIVAL — ANY GAME. ANYONE. ANYWHERE.
+</footer>
+
+</body>
+</html>
